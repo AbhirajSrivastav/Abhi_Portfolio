@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
           <div className="relative group">
             <div className="w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-3xl bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-indigo-500/10 p-6 md:p-8 backdrop-blur-xl border border-white/20 dark:border-gray-800/50 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-[1.02]">
               <img 
-                src="/profile.jpg" 
+          src="/image/dp.jpeg" 
                 alt="Abhi - Full Stack Developer & AI Enthusiast"
                 className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-white/30 dark:border-gray-800/50 group-hover:border-white/50 transition-all duration-500"
                 onError={(e: any) => {

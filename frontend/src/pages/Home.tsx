@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 import { ThemeContext } from '../context/ThemeContext';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
+import FreelanceSection from '../components/FreelanceSection';
 import { api } from '../services/api';
+
 
 interface Project {
   id: number;
@@ -72,6 +74,9 @@ const [skills, setSkills] = useState<Skill[]>([]);
           ))}
         </div>
       </section>
+      {/* Freelancing Section */}
+      <FreelanceSection />
+      
       {/* Featured Projects */}
       <section className="py-20">
         <motion.h2 

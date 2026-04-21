@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   featured,
   github,
   liveDemo,
-  image = '/api/placeholder/500/300?text=' + encodeURIComponent(title.substring(0, 4))
+image = `https://picsum.photos/500/300?random=${id}`
 }) => {
   return (
     <motion.div
@@ -84,8 +84,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         {/* Description */}
-        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-8 line-clamp-3 group-hover:line-clamp-none transition-all duration-300">
-          {description}
+        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-8 [&:not(:last-child)]:mb-4 prose-p:leading-relaxed prose-p:line-clamp-3 group-hover:prose-p:line-clamp-none">
+          {description.split('\n').map((line, i) => (
+            <span key={i}>
+              {line}
+              {i < description.split('\n').length - 1 && <br />}
+            </span>
+          ))}
         </p>
 
         {/* Highlight */}
