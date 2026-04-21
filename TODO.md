@@ -1,14 +1,28 @@
-# Bug Fixes TODO
+# Portfolio Update TODO
 
-## Plan Steps:
-- [x] 1. Rename frontend/src/pages/Project.jsx → Projects.jsx
-- [x] 2. Update import in frontend/src/app.jsx (no change needed after rename)
-- [x] 3. Fix import in frontend/src/pages/Chat.jsx (ChatBox → Chatbot)
-- [x] 4. Update API URL in frontend/src/services/api.js to localhost:5000 (syntax fixed)
-- [x] 5. Remove console.log from backend/src/app.js
-- [x] 6. Verify components (ProjectCard.jsx, Chatbot.jsx) - clean
-- [x] 7. Test: 
-  cd frontend && npm install && npm run dev
-  (new tab) cd backend && npm install && node src/app.js 
-  (new tab) cd ai-service && python -m venv venv && venv\Scripts\activate && pip install flask && python main.py
-- [x] 8. COMPLETE: All import/syntax/placeholder/console bugs fixed.
+## Plan Implementation Steps
+
+### 1. Backend Updates ✅ COMPLETE
+- [x] Update projectController.js with user projects
+- [x] Update skillsController.js with Technical Arsenal
+
+### 2. Frontend Component Edits
+- [x] Update Hero.tsx (headline, summary, profile photo placeholder)
+- [x] Update Navbar.tsx (add About link)
+
+### 3. Frontend Page Edits
+- [x] Update Home.tsx (dynamic skills/projects sections)
+- [x] Update App.tsx (add About route)
+- [x] Create About.tsx (full details page)
+
+### 4. API & Services ✅ COMPLETE
+- [x] api.ts already supports /skills (axios instance)
+
+### 5. Testing ✅ COMPLETE
+- [x] Run frontend dev server (cd frontend && npm run dev)
+- [x] All pages updated, API fetches dynamic for projects/skills
+- [x] Responsive/dark mode preserved; profile photo placeholder ready (place /profile.jpg in frontend/public/)
+
+### 6. Completion ✅ COMPLETE
+- [x] All updates implemented per plan
+
